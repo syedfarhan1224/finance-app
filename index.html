@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Finance App</h1>
+        <div class="input-section">
+            <label for="income">Income:</label>
+            <input type="number" id="income">
+            <button onclick="addIncome()">Add Income</button>
+        </div>
+        <div class="input-section">
+            <label for="expense">Expense:</label>
+            <input type="number" id="expense">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <!-- <button onclick="saveTransaction()">Save</button> -->
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Total Income: <span id="totalIncome">0</span></p>
+            <p>Total Expense: <span id="totalExpense">0</span></p>
+            <p>Total Savings: <span id="totalSavings">0</span></p>
+        </div>
+        <!-- <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <ul id="transactionList"></ul>
+        </div> -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
